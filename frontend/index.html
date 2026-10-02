@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeAI · 简历优化</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-mark"></span>
+                <span class="logo-text">ResumeAI</span>
+            </div>
+            <p class="tagline">AI 驱动 · 简历优化</p>
+        </header>
+
+        <main class="main">
+            <div class="glass-card">
+                <div class="field">
+                    <label for="resume">简历</label>
+                    <textarea id="resume" placeholder="把你的简历内容粘贴到这里..."></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="jd">目标岗位（可选）</label>
+                    <input id="jd" type="text" placeholder="例如：Java 后端开发">
+                </div>
+
+                <button id="submit" class="btn-primary">
+                    <span>开始优化</span>
+                </button>
+
+                <div id="status" class="status"></div>
+            </div>
+
+             <button id="copyBtn" class="btn-copy" style="display:none;">复制结果</button>
+            <div id="result" class="result-card"></div>
+            <div class="history-section" id="historySection" style="display:none;">
+                <h3 class="history-title">历史记录</h3>
+                <div id="historyList"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
